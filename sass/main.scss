@@ -1,10 +1,13 @@
 $font-color : #f0f0f0; 
-$background-color : rgba(31,31,31,.7);
+$background-overlay : rgba(31,31,31,.7);
+
+// mixin for Raleway font for our web
 @mixin mainFont {
 
 font-family: 'Raleway', sans-serif;
 
 }
+
 
 
 body {
@@ -15,11 +18,12 @@ body {
     padding: 0 ;
     font-weight: bold;
     letter-spacing: 1.5px;
+
     /* Section Header */
     #main-page {
 
         .header-overlay {
-            background-color: $background-color;
+            background-color: $background-overlay;
             height : 100vh
         }
 
@@ -30,13 +34,12 @@ body {
         background-position:  50% 50% ;
         height : 100vh ;
 
-        .header-overlay {
-            background-color: $background-color ;
-        }
+        // the div container form 
         .show-div {            
             padding-top: 12.5rem;
             padding-right: 41px;
 
+            // the form inside the show-div
 
             #book-info {
                 display: grid ;
@@ -45,8 +48,11 @@ body {
                 
                 .form-item {
                     display:  grid; 
-                    grid-template-areas: 'text button' ;
+                    grid-template-areas: 'text input' ;
                     margin-top: 1rem;
+
+                    // the div contain the input
+
                     .input-1 {
                         width :100%;
 
@@ -59,6 +65,7 @@ body {
                         }
 
                     }
+                    
                     label {
                         text-align: right ;
                     }

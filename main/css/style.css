@@ -21,9 +21,6 @@ body #main-page .header-overlay {
   background-color: rgba(31, 31, 31, 0.7);
   height: 100vh;
 }
-body #main-page .header-overlay {
-  background-color: rgba(31, 31, 31, 0.7);
-}
 body #main-page .show-div {
   padding-top: 12.5rem;
   padding-right: 41px;
@@ -35,7 +32,7 @@ body #main-page .show-div #book-info {
 }
 body #main-page .show-div #book-info .form-item {
   display: grid;
-  grid-template-areas: "text button";
+  grid-template-areas: "text input";
   margin-top: 1rem;
 }
 body #main-page .show-div #book-info .form-item .input-1 {
