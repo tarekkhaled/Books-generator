@@ -1,3 +1,58 @@
 body {
-  color: #129cf3;
+  color: #f0f0f0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  /* Section Header */
+}
+body #main-page {
+  background-image: url("../img/book2.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
+  /* Part of buttons*/
+}
+body #main-page .header-overlay {
+  background-color: rgba(31, 31, 31, 0.7);
+  height: 100vh;
+}
+body #main-page .header-overlay {
+  background-color: rgba(31, 31, 31, 0.7);
+}
+body #main-page .show-div {
+  padding-top: 12.5rem;
+}
+body #main-page .show-div #book-info {
+  display: grid;
+  grid-template-areas: "left right";
+  text-align: center;
+}
+body #main-page .show-div #book-info .form-item {
+  display: grid;
+  grid-template-areas: "text button";
+  margin-top: 1rem;
+}
+body #main-page .show-div #book-info .form-item .input-1 {
+  width: 100%;
+}
+body #main-page .show-div #book-info .form-item .input-1 input {
+  padding: 3px;
+}
+body #main-page .show-div #book-info .form-item .input-1 input::placeholder {
+  font-size: 14px;
+}
+body #main-page .show-div #book-info .form-item label {
+  text-align: right;
+}
+body #main-page .btn-div {
+  margin: auto;
+}
+body #main-page .btn-div .btn-sub {
+  width: 100%;
+  margin-left: 37px;
 }
