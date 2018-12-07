@@ -26,6 +26,7 @@ body #main-page .header-overlay {
 }
 body #main-page .show-div {
   padding-top: 12.5rem;
+  padding-right: 41px;
 }
 body #main-page .show-div #book-info {
   display: grid;

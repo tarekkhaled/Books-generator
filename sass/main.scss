@@ -35,6 +35,8 @@ body {
         }
         .show-div {            
             padding-top: 12.5rem;
+            padding-right: 41px;
+
 
             #book-info {
                 display: grid ;
@@ -50,6 +52,7 @@ body {
 
                         input {
                             padding:3px;
+
                             &::placeholder {
                                 font-size: 14px;
                             } 
