@@ -17,10 +17,11 @@ const newClasses = function () {
 
     var form_item = document.getElementsByClassName('form-item')
 
-    for (var i = 3 ; i < form_item.length ; i++)
-    {
-        form_item[i].classList.add('label-shown');
-    }
+    document.querySelector('.part-right').classList.add('part-right-shown')
+
+    document.querySelector('.part-left').classList.add('part-left-shown')
+
+    
 
 
 }
