@@ -1,0 +1,23 @@
+// responsive for mobiles screens 
+@media screen and (max-width:768px) {
+    .show-div {
+        padding-top: 5rem!important;
+        
+    }
+    #book-info {
+        display : grid!important;
+        grid-template-areas: 'part-top' !important ;
+    }
+    .input-1 {
+        text-align : right;
+    }
+
+    .form-item label {
+        text-align: left!important;
+    }
+
+    .btn-div button {
+        width : 200px;
+        margin : auto!important
+    }
+}
