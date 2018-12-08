@@ -25,8 +25,7 @@ body {
 
         // the div container form 
         .show-div {            
-            padding-top: 12.5rem;
-            padding-right: 41px;
+            padding-top: 11rem;
 
             // the form inside the show-div
 
@@ -36,14 +35,13 @@ body {
                 text-align: center;
                 
                 .form-item {
-                    display:  grid; 
-                    grid-template-areas: 'text input' ;
                     margin-top: 1rem;
 
                     // the div contain the input
 
                     .input-1 {
                         width :100%;
+                        // text-align: right;
 
                         input {
                             padding:3px;
@@ -55,17 +53,16 @@ body {
 
                     }
                     
-                    label {
-                        text-align: right ;
-                    }
+                    // label {
+                    //     text-align: left ;
+                    // }
                 }
             }
         }
 
         /* Part of buttons*/
         .btn-div {
-            margin : auto ;
-
+            margin-left: 38.666667%;
             .btn-sub {
                 width : 100% ;
                 margin-left : 37px;
@@ -77,7 +74,27 @@ body {
     
         }
     }
+
+    /* shown part */ 
+    .part-left-shown {
+        @include mainTransition;
+        transform : translate3d(0px,-140px, 0px);
+        
+
+    }
+    .part-right-shown {
+        @include mainTransition;
+        transform: translate3d(-552px, 99px, 0px);
+    }
 }
+// You can also use for to delay between every "li"
+// Delay each nav item slide by 0.1s
+@for $x from 1 through 3 {
+    .part-right-shown:nth-child(#{$x}) {
+      transition-delay: $x * 0.1s ;
+    }
+  }
+  
 
 
 // Importing responsive scss file to this file

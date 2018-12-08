@@ -8,6 +8,11 @@ font-family: 'Raleway', sans-serif;
 
 }
 
+//mixin for transition 
+@mixin mainTransition  {
+  transition: all 1s ease-in-out
+}
+
 
 
 // Mixin for responsive for mobiles phones 
