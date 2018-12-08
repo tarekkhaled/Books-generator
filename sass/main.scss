@@ -69,6 +69,10 @@ body {
             .btn-sub {
                 width : 100% ;
                 margin-left : 37px;
+                
+                &:hover {
+                    transition:  all 1s ease-in-out ;
+                }
             }
     
         }
