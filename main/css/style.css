@@ -54,6 +54,9 @@ body #main-page .btn-div .btn-sub {
   width: 100%;
   margin-left: 37px;
 }
+body #main-page .btn-div .btn-sub:hover {
+  transition: all 1s ease-in-out;
+}
 
 @media screen and (max-width: 768px) {
   .show-div {
