@@ -1,15 +1,4 @@
-$font-color : #f0f0f0; 
-$background-overlay : rgba(31,31,31,.7);
-
-// mixin for Raleway font for our web
-@mixin mainFont {
-
-font-family: 'Raleway', sans-serif;
-
-}
-
-
-
+@import 'config';
 body {
     color : $font-color ; 
     box-sizing: border-box ;

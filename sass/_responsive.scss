@@ -1,5 +1,5 @@
 // responsive for mobiles screens 
-@media screen and (max-width:768px) {
+@include mobiles {
     .show-div {
         padding-top: 5rem!important;
         
