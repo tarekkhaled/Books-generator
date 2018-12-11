@@ -7,21 +7,24 @@ body {
     padding: 0 ;
     font-weight: bold;
     letter-spacing: 1.5px;
+    overflow: hidden;
+    background-image: url('../img/book2.jpeg'); 
+    background-attachment: fixed ;
+    background-repeat: no-repeat ; 
+    background-size: cover ; 
+    background-position:  50% 50% ;
+    height : 100vh ;
 
     /* Section Header */
     #main-page {
 
         .header-overlay {
             background-color: $background-overlay;
-            height : 100vh
+            height : 100vh;
+            width : 100vw;
         }
 
-        background-image: url('../img/book2.jpeg'); 
-        background-attachment: fixed ;
-        background-repeat: no-repeat ; 
-        background-size: cover ; 
-        background-position:  50% 50% ;
-        height : 100vh ;
+       
 
         // the div container form 
         .show-div {            
@@ -43,7 +46,7 @@ body {
                         width :100%;
                         // text-align: right;
 
-                        input {
+                        input,.sel {
                             padding:3px;
 
                             &::placeholder {
@@ -88,15 +91,13 @@ body {
     }
 }
 // You can also use for to delay between every "li"
-// Delay each nav item slide by 0.1s
-@for $x from 1 through 3 {
-    .part-right-shown:nth-child(#{$x}) {
-      transition-delay: $x * 0.1s ;
-    }
-  }
-  
+// 
 
 
+
+
+
+@import 'results' ;
 // Importing responsive scss file to this file
 @import 'responsive'  ;
 

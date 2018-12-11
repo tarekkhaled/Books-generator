@@ -6,21 +6,23 @@ body {
   padding: 0;
   font-weight: bold;
   letter-spacing: 1.5px;
-  /* Section Header */
-  /* shown part */
-}
-body #main-page {
+  overflow: hidden;
   background-image: url("../img/book2.jpeg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   height: 100vh;
+  /* Section Header */
+  /* shown part */
+}
+body #main-page {
   /* Part of buttons*/
 }
 body #main-page .header-overlay {
   background-color: rgba(31, 31, 31, 0.7);
   height: 100vh;
+  width: 100vw;
 }
 body #main-page .show-div {
   padding-top: 11rem;
@@ -36,10 +38,10 @@ body #main-page .show-div #book-info .form-item {
 body #main-page .show-div #book-info .form-item .input-1 {
   width: 100%;
 }
-body #main-page .show-div #book-info .form-item .input-1 input {
+body #main-page .show-div #book-info .form-item .input-1 input, body #main-page .show-div #book-info .form-item .input-1 .sel {
   padding: 3px;
 }
-body #main-page .show-div #book-info .form-item .input-1 input::placeholder {
+body #main-page .show-div #book-info .form-item .input-1 input::placeholder, body #main-page .show-div #book-info .form-item .input-1 .sel::placeholder {
   font-size: 14px;
 }
 body #main-page .btn-div {
@@ -61,16 +63,30 @@ body .part-right-shown {
   transform: translate3d(-552px, 99px, 0px);
 }
 
-.part-right-shown:nth-child(1) {
-  transition-delay: 0.1s;
+.results-shown {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in-out;
 }
 
-.part-right-shown:nth-child(2) {
-  transition-delay: 0.2s;
+.Parent {
+  text-align: center;
 }
 
-.part-right-shown:nth-child(3) {
-  transition-delay: 0.3s;
+.btn-sub-shown {
+  display: none;
+}
+
+.item {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+}
+
+.item p {
+  color: #7a7a7a;
 }
 
 @media screen and (max-width: 768px) {
