@@ -123,7 +123,7 @@ document.querySelector('.btn-sub').addEventListener('click' , function(e) {
     saveInfo()
     elDomView(book)
     document.querySelector('nav').style.display = 'none'
-    document.querySelector('.results-shown').setAttribute('style',`background-color:${book.checkTheColor()}`)
+    document.querySelector('.results-shown').setAttribute('style',`background-color:${book.checkTheColor()};opacity:0.67`)
     
 
 
