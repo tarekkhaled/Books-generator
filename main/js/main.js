@@ -1,12 +1,29 @@
-let book = {
+let book = { 
+    colors : ['black','white','blue','brown','orange','red','purble','grey','yellow'] , 
     title : '',
     subtitle : '', 
     author : '' ,
     background_color : '',
     publisher : '' ,
-    publishing_year : ''
+    publishing_year : '' ,
+
+    checkTheColor : function () {
+       const result = this.colors.findIndex((color)=>{
+           return this.background_color.toLowerCase().includes(color)
+       })
+       if (result > -1) {
+           return this.background_color
+       }
+       else {
+        return alert(`${this.background_color} is not found try another color`)
+       }
+    }
+    
 
 }
+
+
+
 
 
 // the new Classes added after submit button 
@@ -82,7 +99,7 @@ const elDomView = function (book) {
     </div>
     <div class='item'>
     <h3>Background</h3>
-    <p>${book.background_color}</p>
+    <p>${book.checkTheColor()}</p>
     </div>
     <div class='item'>
     <h3>Publisher</h3>
@@ -105,6 +122,8 @@ document.querySelector('.btn-sub').addEventListener('click' , function(e) {
     newClasses()
     saveInfo()
     elDomView(book)
+    document.querySelector('nav').style.display = 'none'
+    document.querySelector('.results-shown').setAttribute('style',`background-color:${book.checkTheColor()}`)
     
 
 
